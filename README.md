@@ -16,7 +16,21 @@ npm install bignumber.js-ext
 yarn add bignumber.js-ext
 ```
 
-2. 使用
+2. 引入
+
+Nodejs环境
+
+```
+const BN = require('bignumber.js-ext')
+```
+
+浏览器环境
+
+```
+import BN from 'bignumber.js-ext';
+```
+
+3. 使用
 
 - 加法(add)
 

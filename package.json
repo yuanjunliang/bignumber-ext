@@ -1,6 +1,6 @@
 {
   "name": "bignumber.js-ext",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "BigNumber.js的扩展，精简了一些写法",
   "main": "index.js",
   "scripts": {

@@ -4,7 +4,7 @@
   "description": "BigNumber.js的扩展，精简了一些写法",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/mocha/bin/mocha test/test.js"
   },
   "repository": {
     "type": "git",
@@ -19,5 +19,8 @@
   "homepage": "https://github.com/yuanjunliang/bignumber.js-ext#readme",
   "dependencies": {
     "bignumber.js": "^9.0.1"
+  },
+  "devDependencies": {
+    "mocha": "^8.2.1"
   }
 }

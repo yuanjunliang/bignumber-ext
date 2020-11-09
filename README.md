@@ -99,8 +99,8 @@ BN(2).pow(3).toString(10)  // 8
 
 ```
 BN(12.58).div(5).toString(10)  // 2.516
-BN(12.58).div(5)。toFixed(1).toString(10)  // 2.5
-BN(12.58).div(5)。toFixed(2).toString(10)  // 2.52
+BN(12.58).div(5).toFixed(1).toString(10)  // 2.5
+BN(12.58).div(5).toFixed(2).toString(10)  // 2.52
 ```
 
 更多用法参考: [bignumber.js](https://github.com/MikeMcl/bignumber.js/)

@@ -1,0 +1,23 @@
+{
+  "name": "bignumber-ext",
+  "version": "1.0.0",
+  "description": "BigNumber.js的扩展，精简了一些写法",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yuanjunliang/bignumber-ext.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yuanjunliang/bignumber-ext/issues"
+  },
+  "homepage": "https://github.com/yuanjunliang/bignumber-ext#readme",
+  "dependencies": {
+    "bignumber.js": "^9.0.1"
+  }
+}

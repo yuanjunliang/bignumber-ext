@@ -4,6 +4,20 @@ BigNumber.js的扩展，精简了一些写法
 
 用法如下:
 
+1. 安装
+
+```
+npm install bignumber.js-ext
+```
+
+或
+
+```
+yarn add bignumber.js-ext
+```
+
+2. 使用
+
 - 加法(add)
 
 ```

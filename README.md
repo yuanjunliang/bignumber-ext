@@ -97,11 +97,16 @@ BN(4).sub(5).toString(10)  // -1
 BN(4).sub(5).abs().toString(10)  // 1
 ```
 
-- 取整(int)  注: 会四舍五入
+- 取整(int)
 
 ```
 BN(12.5).div(5).toString(10)  // 2.5
 BN(12.5).div(5).int().toString(10)  // 3
+
+// 向下取整
+BN(12.5).div(5).int(BN.ROUND_DOWN).toString(10)  // 2
+// 向上取整
+BN(12.5).div(5).int(BN.ROUND_UP).toString(10)    // 3
 ```
 
 - 是否为NaN(isNaN)  
@@ -130,6 +135,29 @@ BN(12.58).div(5).toString(10)  // 2.516
 BN(12.58).div(5).toFixed(1).toString(10)  // 2.5
 BN(12.58).div(5).toFixed(2).toString(10)  // 2.52
 ```
+
+- 格式化(fmt)
+
+```
+BN('123456789.123456789').fmt()  // 123,456,789.123456789
+BN('123456789.123456789').fmt(1) // 123,456,789.1
+```
+
+## 舍入模式
+
+```
+//取值范围：
+BN.ROUND_UP = 0;         //远离0方向舍入
+BN.ROUND_DOWN = 1;       //向0方向舍入
+BN.ROUND_CEIL = 2;       //向正无限大舍入
+BN.ROUND_FLOOR = 3;      //向负无限大舍入
+BN.ROUND_HALF_UP = 4;    //四舍五入：向最接近的数字方向舍入，如果与两个相邻数字的距离相等，则向上舍入。
+BN.ROUND_HALF_DOWN = 5;  //向最接近的数字方向舍入，如果与两个相邻数字的距离相等，则向下舍入。
+BN.ROUND_HALF_EVEN = 6;  //向最接近数字方向舍入，如果与两个相邻数字的距离相等，则向相邻的偶数舍入
+BN.ROUND_HALF_CEIL = 7;
+BN.ROUND_HALF_FLOOR = 8;
+```
+
 
 更多用法参考: [bignumber.js](https://github.com/MikeMcl/bignumber.js/)
 

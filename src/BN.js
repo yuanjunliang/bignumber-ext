@@ -33,6 +33,9 @@ BigNumber.prototype.abs = BigNumber.prototype.absoluteValue;
 // 取整
 BigNumber.prototype.int = BigNumber.prototype.integerValue;
 
+// 格式化
+BigNumber.prototype.fmt = BigNumber.prototype.toFormat;
+
 // isNaN
 // BigNumber.prototype.isNaN
 

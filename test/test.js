@@ -70,10 +70,14 @@ describe('Test bignumberjs-ext',()=> {
         assert.equal(BN(this.x).sub(this.y).abs().toString(10),'1')
     })
 
-    // 取整(四舍五入)
+    // 取整
     it('int',()=> {
         assert.equal(BN(12.5).div(5).toString(10),'2.5')
         assert.equal(BN(12.5).div(5).int().toString(10),'3')
+        // 向下取整
+        assert.equal(BN(12.5).div(5).int(BN.ROUND_DOWN).toString(10),'2')
+        // 向上取整
+        assert.equal(BN(12.5).div(5).int(BN.ROUND_UP).toString(10),'3')
     })
 
     // 是否为NaN
@@ -102,5 +106,11 @@ describe('Test bignumberjs-ext',()=> {
         assert.equal(BN(12.58).div(5).toString(10),'2.516')
         assert.equal(BN(12.58).div(5).toFixed(1).toString(10),'2.5')
         assert.equal(BN(12.58).div(5).toFixed(2).toString(10),'2.52')
+    })
+
+    // 格式化
+    it('fmt',()=> {
+        assert.equal(BN('123456789.123456789').fmt(),'123,456,789.123456789')
+        assert.equal(BN('123456789.123456789').fmt(1),'123,456,789.1')
     })
 })
